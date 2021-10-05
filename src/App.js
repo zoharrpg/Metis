@@ -1,29 +1,14 @@
 import "./App.css";
 
 import Header from "./component/header/Header";
-import ContentBoard from "./component/postboard/ContentBoard";
-
-
-
+import Content from "./component/layout/content/Content";
 
 function App() {
   return (
     <div className="App">
-
-    
-
-      
-
-      
       <Header />
-
-      <ContentBoard></ContentBoard>
-
-    
-    
-     
+      <Content />
     </div>
-     
   );
 }
 
