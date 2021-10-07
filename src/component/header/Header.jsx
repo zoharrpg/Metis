@@ -12,9 +12,11 @@ const Header = (props) => {
 
         <Navbar.Collapse className="justify-content-end">
           <CusDropdown />
+          {/*TODO change this to link when login page finished */}
           <Button variant="link" style={{ color: "black" }}>
             Login
           </Button>
+          {/*TODO change this to link when sign up page finished */}
           <Button variant="outline-secondary mx-2">Sign up</Button>
         </Navbar.Collapse>
       </Navbar>

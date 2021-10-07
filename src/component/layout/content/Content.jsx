@@ -11,6 +11,7 @@ const Content = (props) => {
           <Col md={8}>
             <ContentBoard />
           </Col>
+          {/*TODO add more things here*/}
           <Col md={{ span: 3, offset: 1 }}>Others</Col>
         </Row>
       </Container>
