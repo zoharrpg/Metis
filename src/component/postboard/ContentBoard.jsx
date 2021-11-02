@@ -3,8 +3,8 @@ import { Card, Button } from "react-bootstrap";
 import "./contentboard.css";
 
 const ContentBoard = (props) => {
-  let [up, setUp] = useState(props.up);
-  let [down, setDown] = useState(props.down);
+  let [up, setUp] = useState(props.post.up);
+  let [down, setDown] = useState(props.post.down);
   const clickUp = () => {
     setUp(++up);
   };
@@ -15,9 +15,9 @@ const ContentBoard = (props) => {
   return (
     <>
       <Card className="text-center mt-3 shadow">
-        <Card.Header as="h5">Is Mark Zuckerberg a human？</Card.Header>
+        <Card.Header as="h5">{props.post.title}</Card.Header>
         <Card.Body>
-          <Card.Text>Mark Zuckerberg: "I WAS Human"</Card.Text>
+          <Card.Text>{props.post.content}</Card.Text>
           <Card.Img
             src="https://media.giphy.com/media/cPNXOm7ln8HwK7UcbV/giphy.gif?cid=ecf05e47nwc2riha7w8ehrp83jrlvt4tf02xq3neaichs2oi&rid=giphy.gif&ct=g"
             style={{ width: "10rem" }}

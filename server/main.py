@@ -1,12 +1,12 @@
-import json
 import flask
 
 from utils import db
 from utils import post
 from utils import r
+from flask_cors import CORS
 
 app = flask.Flask(__name__)
-
+CORS(app,resource=r'/*')
 
 @app.route('/create-post', methods=['POST'])
 def create_post():

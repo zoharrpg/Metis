@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ContentBoard from "../postboard/ContentBoard";
+import contentContext from "../../context/content/contentContext";
 
 const Content = (props) => {
+  const ContentContext = useContext(contentContext);
+  const { posts, getPosts } = ContentContext;
+  useEffect(() => {
+    getPosts();
+    console.log(posts);
+  }, []);
   return (
     <>
       <Container className="mt-4">
         <Row>
           <Col md={8}>
-            <ContentBoard up={2000} down={1000} />
-            <ContentBoard up={1000} down={2000} />
+            {posts != null &&
+              posts.map((post) => {
+                return <ContentBoard post={post} />;
+              })}
           </Col>
           {/*TODO add more things here*/}
           <Col md={{ span: 3, offset: 1 }}>Others</Col>
