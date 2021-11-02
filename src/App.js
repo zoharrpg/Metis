@@ -1,7 +1,7 @@
 import "./App.css";
 
 import Header from "./component/header/Header";
-import Content from "./component/layout/content/Content";
+import Content from "./component/content/Content";
 import { Route, Switch } from "react-router";
 import Login from "./component/login/Login";
 

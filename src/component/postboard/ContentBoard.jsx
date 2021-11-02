@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { Card, Button } from "react-bootstrap";
-import "./content.css";
+import "./contentboard.css";
 
 const ContentBoard = (props) => {
+  let [up, setUp] = useState(props.up);
+  let [down, setDown] = useState(props.down);
+  const clickUp = () => {
+    setUp(++up);
+  };
+  const clickDown = () => {
+    setDown(++down);
+  };
+
   return (
     <>
-      <Card className="text-center ">
+      <Card className="text-center mt-3 shadow">
         <Card.Header as="h5">Is Mark Zuckerberg a human？</Card.Header>
         <Card.Body>
           <Card.Text>Mark Zuckerberg: "I WAS Human"</Card.Text>
@@ -15,13 +24,13 @@ const ContentBoard = (props) => {
           />
         </Card.Body>
         <Card.Footer>
-          <Button variant="primary" className="mx-2">
+          <Button variant="primary" className="mx-2" onClick={clickUp}>
             <i className="fas fa-caret-up" />
-            <span> 2000</span>
+            <span> {up}</span>
           </Button>
-          <Button variant="danger">
+          <Button variant="danger" onClick={clickDown}>
             <i className="fas fa-caret-down" />
-            <span> 1</span>
+            <span> {down}</span>
           </Button>
         </Card.Footer>
       </Card>
