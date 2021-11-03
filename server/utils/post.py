@@ -5,4 +5,5 @@ def post_entity_2_dict(entity):
         "content": entity['content'],
         "up": entity['up'],
         "down": entity['down'],
+        "id": entity.id
     }

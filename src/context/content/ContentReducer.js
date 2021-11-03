@@ -1,4 +1,4 @@
-import { GET_POST } from "../types";
+import { GET_POST, CREATE_POST } from "../types";
 export default (state, actions) => {
   switch (actions.type) {
     case GET_POST:
@@ -6,6 +6,7 @@ export default (state, actions) => {
         ...state,
         posts: actions.payload,
       };
+    case CREATE_POST:
     default:
       return state;
   }

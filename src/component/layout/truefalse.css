@@ -1,0 +1,24 @@
+.logo{
+    position: absolute;
+    right: 9%;
+    top: 30%;
+    border: green 1px solid;
+    padding: 5% 5%;
+    font-size: 18px;
+    font-weight: bold;
+}
+.round{
+    border-radius: 50%;
+}
+.true{
+    border: green 1px solid;
+    padding: 5% 5%;
+}
+.false{
+    border: red 1px solid;
+    padding: 5% 5%;
+}
+.pending{
+    border: gray 1px solid;
+    padding: 5% 5%;
+}

@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Card, Button } from "react-bootstrap";
 import "./contentboard.css";
+import TrueFalse from "../layout/TrueFalse";
 
 const ContentBoard = (props) => {
   let [up, setUp] = useState(props.post.up);
@@ -21,6 +22,10 @@ const ContentBoard = (props) => {
           <Card.Img
             src="https://media.giphy.com/media/cPNXOm7ln8HwK7UcbV/giphy.gif?cid=ecf05e47nwc2riha7w8ehrp83jrlvt4tf02xq3neaichs2oi&rid=giphy.gif&ct=g"
             style={{ width: "10rem" }}
+          />
+          <TrueFalse
+            sty={up === "???" ? "pending" : up > down ? "true" : "false"}
+            decision={up === "???" ? "PENDING" : up > down ? "TRUE" : "FALSE"}
           />
         </Card.Body>
         <Card.Footer>
