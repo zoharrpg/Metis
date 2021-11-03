@@ -1,0 +1,7 @@
+flask
+google-api-core
+google-auth
+google-cloud-core
+google-cloud-datastore
+googleapis-common-protos
+flask_cors

@@ -1,12 +1,16 @@
 import flask
-
 from utils import db
 from utils import post
 from utils import r
 from flask_cors import CORS
 
 app = flask.Flask(__name__)
-CORS(app,resource=r'/*')
+CORS(app, resource=r'/*')
+
+
+@app.route('/')
+def root():
+    return flask.send_from_directory('./build','index.html')
 
 @app.route('/create-post', methods=['POST'])
 def create_post():
