@@ -40,7 +40,7 @@ const PostPage = (props) => {
 
   return (
     <div className="container-fluid">
-      <Form className="mt-5 shadow">
+      <Form className="shadow">
         <Form.Group className="mb-3" hasValidation>
           <Form.Label>Title</Form.Label>
           <Form.Control
@@ -69,7 +69,7 @@ const PostPage = (props) => {
         </Form.Group>
         <Row className="text-center mt-3">
           <Col>
-            <Button variant="success" className="btn-lg" onClick={onSubmit}>
+            <Button variant="primary" className="btn-lg" onClick={onSubmit}>
               Submit
             </Button>
           </Col>

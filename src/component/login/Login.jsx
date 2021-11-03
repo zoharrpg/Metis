@@ -7,7 +7,7 @@ const Login = (props) => {
   //TODO fix this login page
   return (
     <div className="vertical">
-      <LoginForm></LoginForm>
+      <LoginForm />
     </div>
   );
 };

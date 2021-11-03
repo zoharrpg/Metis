@@ -1,5 +1,10 @@
 runtime: python39
 
 handlers:
+  - url: /static
+    static_dir: build/static
+  - url: /(.*\.(json|ico|js|html))$
+    static_files: build/
+    upload: build/.*\.(json|ico|js|html)$
   - url: /.*
     script: auto

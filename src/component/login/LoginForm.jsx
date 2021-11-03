@@ -1,5 +1,6 @@
 import React from "react";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
+import "./Login.css";
 
 const LoginForm = (props) => {
   //TODO fix this login page
@@ -7,7 +8,7 @@ const LoginForm = (props) => {
     <Container>
       <Row className="justify-content-center">
         <Col md="auto">
-          <Form>
+          <Form className="shadow">
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
               <Form.Control type="email" placeholder="Enter email" />
