@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ContentBoard from "../postboard/ContentBoard";
 import contentContext from "../../context/content/contentContext";
 import SideBar from "../sidebar/SideBar";
+import CommentsControl from "../commentsComponents/commentsControl/CommentsControl";
 
 const Content = (props) => {
   const ContentContext = useContext(contentContext);
@@ -31,9 +32,20 @@ const Content = (props) => {
               })}
           </Col>
 
-          {/*TODO add more things here*/}
           <Col md={{ span: 3, offset: 1 }}>
             <SideBar />
+          </Col>
+        </Row>
+      </Container>
+
+      <br />
+      <br />
+
+      {/*Use Container to make formate organize */}
+      <Container>
+        <Row>
+          <Col md={8}>
+            <CommentsControl></CommentsControl>
           </Col>
         </Row>
       </Container>
