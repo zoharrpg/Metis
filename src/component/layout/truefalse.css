@@ -1,7 +1,7 @@
 .logo{
     position: absolute;
-    right: 9%;
-    top: 30%;
+    right: 3%;
+    top: 43%;
     border: green 1px solid;
     padding: 5% 5%;
     font-size: 18px;
@@ -20,5 +20,5 @@
 }
 .pending{
     border: gray 1px solid;
-    padding: 5% 5%;
+    padding: 2% 2%;
 }
