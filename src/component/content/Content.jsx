@@ -26,6 +26,15 @@ const Content = (props) => {
                 content: "Pending state",
               }}
             />
+            <ContentBoard
+              key={123}
+              post={{
+                up: "???",
+                down: "???",
+                title: "Pending",
+                content: "Pending state",
+              }}
+            />
             {posts != null &&
               posts.map((post) => {
                 return <ContentBoard key={post.id} post={post} />;
@@ -45,7 +54,7 @@ const Content = (props) => {
       <Container>
         <Row>
           <Col md={8}>
-            <CommentsControl></CommentsControl>
+            <CommentsControl />
           </Col>
         </Row>
       </Container>

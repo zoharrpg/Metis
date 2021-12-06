@@ -37,6 +37,7 @@ const ContentBoard = (props) => {
             <i className="fas fa-caret-down" />
             <span> {down}</span>
           </Button>
+          <span id="end-time">End in 2 day</span>
         </Card.Footer>
       </Card>
     </>

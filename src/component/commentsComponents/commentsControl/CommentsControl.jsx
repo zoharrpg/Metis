@@ -11,7 +11,7 @@ const CommentsControl = (props) => (
   <Card>
     <Card.Header>Comments</Card.Header>
     <Card.Body>
-      <Editorcomponent></Editorcomponent>
+      <Editorcomponent />
     </Card.Body>
   </Card>
 );
