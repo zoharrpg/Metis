@@ -4,16 +4,14 @@ import "antd/dist/antd.css";
 import { Card } from "react-bootstrap";
 import Comments from "../comments/comments";
 
+import Editorcomponent from "../editor/editor";
+
 // Components for displaying comments and type area
 const CommentsControl = (props) => (
   <Card>
     <Card.Header>Comments</Card.Header>
     <Card.Body>
-      <Comments></Comments>
-      <Comments></Comments>
-      <Comments></Comments>
-      <Comments></Comments>
-      <Comments></Comments>
+      <Editorcomponent></Editorcomponent>
     </Card.Body>
   </Card>
 );

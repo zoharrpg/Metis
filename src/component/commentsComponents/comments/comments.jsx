@@ -10,7 +10,8 @@ import {
 import "antd/dist/antd.css";
 import "./comments.css";
 
-const Comments = ({ children }) => {
+// comments component
+const Comments = (props) => {
   const [likes, setLikes] = useState(0);
 
   const [dislikes, setDislikes] = useState(0);
@@ -48,23 +49,14 @@ const Comments = ({ children }) => {
     <Comment
       actions={actions}
       author={<a>Han Solo</a>}
-      avatar={
-        <Avatar src="https://joeschmoe.io/api/v1/random" alt="Han Solo" />
-      }
-      content={
-        <p>
-          We supply a series of design principles, practical patterns and high
-          quality design resources (Sketch and Axure).
-        </p>
-      }
+      avatar={props.avatar}
+      content={props.content}
       datetime={
         <Tooltip title={moment().format("YYYY-MM-DD HH:mm:ss")}>
           <span>{moment().fromNow()}</span>
         </Tooltip>
       }
-    >
-      {children}
-    </Comment>
+    ></Comment>
   );
 };
 
