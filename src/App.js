@@ -16,9 +16,9 @@ function App() {
             <Header />
             <Content />
           </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
+          {/*<Route path="/login">*/}
+          {/*  <Login />*/}
+          {/*</Route>*/}
           <Route path="/post">
             <PostPage />
           </Route>

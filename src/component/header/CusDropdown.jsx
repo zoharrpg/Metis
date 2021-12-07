@@ -11,13 +11,8 @@ const CusDropdown = (props) => {
         <Dropdown.Menu>
           <Dropdown.Item href="#/action-1">
             <div>
-              <i className="fas fa-info-circle mr-2" /> Help Central
-            </div>
-          </Dropdown.Item>
-          <Dropdown.Divider />
-          <Dropdown.Item href="#/action-2">
-            <div>
-              <i className="fas fa-sign-in-alt " /> Log In | Sign Up
+              <i className="fas fa-info-circle mr-2" />
+              Help Central
             </div>
           </Dropdown.Item>
         </Dropdown.Menu>

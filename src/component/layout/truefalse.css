@@ -1,22 +1,23 @@
 .logo{
     position: absolute;
     right: 3%;
-    top: 43%;
+    top: 4%;
     border: green 1px solid;
     padding: 5% 5%;
     font-size: 18px;
     font-weight: bold;
 }
-.round{
-    border-radius: 50%;
+.shadow{
+    box-shadow:  0 14px 28px  rgba(0,0,0,0.25), 10px 0 10px  rgba(0,0,0,0.22);
 }
+
 .true{
     border: green 1px solid;
-    padding: 5% 5%;
+    padding: 2% 2%;
 }
 .false{
     border: red 1px solid;
-    padding: 5% 5%;
+    padding: 2% 2%;
 }
 .pending{
     border: gray 1px solid;
