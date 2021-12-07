@@ -13,11 +13,11 @@
 
 .true{
     border: green 1px solid;
-    padding: 5% 5%;
+    padding: 2% 2%;
 }
 .false{
     border: red 1px solid;
-    padding: 5% 5%;
+    padding: 2% 2%;
 }
 .pending{
     border: gray 1px solid;

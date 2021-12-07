@@ -42,7 +42,6 @@ const Comments = (props) => {
         <span className="comment-action">{dislikes}</span>
       </span>
     </Tooltip>,
-    <span key="comment-basic-reply-to">Reply to</span>,
   ];
 
   return (
@@ -56,7 +55,7 @@ const Comments = (props) => {
           <span>{moment().fromNow()}</span>
         </Tooltip>
       }
-    ></Comment>
+    />
   );
 };
 

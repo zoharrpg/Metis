@@ -1,20 +1,28 @@
 import React, { useEffect, useState } from "react";
 import { Card, Button } from "react-bootstrap";
 import "./contentboard.css";
+import "react-notifications/lib/notifications.css";
 import TrueFalse from "../layout/TrueFalse";
+import {
+  NotificationContainer,
+  NotificationManager,
+} from "react-notifications";
 
 const ContentBoard = (props) => {
   let [up, setUp] = useState(props.post.up);
   let [down, setDown] = useState(props.post.down);
   const clickUp = () => {
+    NotificationManager.success("SUCCESS!!", "Up Vote");
     setUp(++up);
   };
   const clickDown = () => {
+    NotificationManager.info("SUCCESS!!", "Down Vote");
     setDown(++down);
   };
 
   return (
     <>
+      <NotificationContainer />
       <Card className="text-center mt-3 shadow">
         <Card.Header as="h5">{props.post.title}</Card.Header>
         <Card.Body>
